@@ -1,1 +1,11 @@
 node_modules
+.idea
+build
+*.tfplan
+terraform.tfstate.backup
+.terraform.tfstate.lock.info
+.terraform
+packages/edge/worker
+yarn-error.log
+cloud
+.vscode

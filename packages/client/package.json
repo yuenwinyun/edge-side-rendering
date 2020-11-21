@@ -1,0 +1,19 @@
+{
+    "name": "@esr/client",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "UNLICENSED",
+    "scripts": {
+        "start": "yarn workspace @esr/script start-client",
+        "build": "yarn workspace @esr/script bundle-client"
+    },
+    "devDependencies": {
+        "@types/react": "17.0.0",
+        "@types/react-dom": "17.0.0"
+    },
+    "dependencies": {
+        "@adobe/react-spectrum": "3.5.0",
+        "react": "17.0.1",
+        "react-dom": "17.0.1"
+    }
+}

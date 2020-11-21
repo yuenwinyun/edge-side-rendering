@@ -1,0 +1,2 @@
+type = "webpack"
+webpack_config = "webpack.config.js"

@@ -1,0 +1,11 @@
+{
+    "name": "@esr/script",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "scripts": {
+        "start-client": "NODE_ENV=development ts-node ./bundle-client.ts",
+        "bundle-client": "NODE_ENV=production ts-node ./bundle-client.ts",
+        "watch-server": "NODE_ENV=development ts-node ./bundle-server.ts",
+        "bundle-server": "NODE_ENV=production ts-node ./bundle-server.ts"
+    }
+}

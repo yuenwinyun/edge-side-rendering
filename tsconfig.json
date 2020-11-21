@@ -1,6 +1,12 @@
 {
-  "compilerOptions": {
-    "jsx": "react",
-    "esModuleInterop": true
-  }
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "strict": true,
+        "noEmit": true,
+        "inlineSources": true,
+        "allowJs": true,
+        "importHelpers": true,
+        "jsx": "react"
+    }
 }

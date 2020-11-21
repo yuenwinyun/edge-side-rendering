@@ -1,0 +1,14 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "moduleResolution": "node",
+        "module": "esnext",
+        "target": "es2015",
+        "lib": ["dom", "esnext"],
+        "allowJs": false,
+        "paths": {
+            "component": ["./component"]
+        }
+    }
+}

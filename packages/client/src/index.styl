@@ -1,0 +1,35 @@
+*
+    box-sizing: border-box
+
+html,
+body
+    margin: 0 auto
+    max-width: 375px
+
+
+hero1-ratio = 4 / 6
+hero2-ratio = 6 / 3.37
+
+#app
+    height: 100%
+
+    .hero-1
+        img 
+            width: 375px
+            height: (@width/hero1-ratio)
+
+    .hero-2
+        img 
+            width: 375px
+            height: (@width/hero2-ratio)
+
+    .footer
+        height: 375px
+        margin-top: 5vh
+        background-color: #000
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+        font-size: 24px
+        color: #fff
