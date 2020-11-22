@@ -3,9 +3,9 @@
 ## TODO
 
 -   [ ] refactor server webpack config, use `webpack-dev-middleware` and `webpack-hot-middleware` in development instead of using nodemon
--   [ ] develop worker script for edge side rendering
--   [ ] extract secret files from project, put tfstate file into appropriate place
--   [ ] extract cloud folder to another repo
+-   [x] develop worker script for edge side rendering
+-   [x] extract secret files from project, put tfstate file into appropriate place
+-   [x] extract cloud folder to another repo
 
 ## References
 
