@@ -8,14 +8,12 @@
         "nohoist": [
             "**/edge/**",
             "**/client/**",
-            "**/server/**"
+            "**/server/**",
+            "**/script/**"
         ]
     },
     "scripts": {
-        "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,md,html}'",
-        "start-image": "/bin/bash ./cloud/docker/01-start-image.sh",
-        "publish-image": "/bin/bash ./cloud/docker/02-publish-image.sh",
-        "deploy": "/bin/bash ./cloud/docker/03-deploy.sh"
+        "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,md,html}'"
     },
     "devDependencies": {
         "@types/clean-webpack-plugin": "0.1.3",
