@@ -2,6 +2,7 @@
 
 ## TODO
 
+-   [ ] manage dependencies
 -   [ ] refactor server webpack config, use `webpack-dev-middleware` and `webpack-hot-middleware` in development instead of using nodemon
 -   [x] develop worker script for edge side rendering
 -   [x] extract secret files from project, put tfstate file into appropriate place
