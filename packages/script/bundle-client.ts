@@ -1,11 +1,10 @@
 import webpack from "webpack";
 import {merge} from "webpack-merge";
-import {createBundler, filterOutFalsy, createPathResolver} from "./helper";
+import {createBundler, createPathResolver} from "./helper";
 import HTMLWebpackPlugin from "html-webpack-plugin";
 import {CleanWebpackPlugin} from "clean-webpack-plugin";
 import {createBaseCompilerConfig} from "./create-base-compiler";
 import MiniCSSExtractPlugin from "mini-css-extract-plugin";
-import InlineChunkHtmlPlugin from "react-dev-utils/InlineChunkHtmlPlugin";
 
 const resolve = createPathResolver(__dirname);
 const workDir = resolve("../client");
@@ -19,7 +18,7 @@ export const clientWebpackConfig = merge(baseCompilerConfig, {
         filename: "static/js/[name].[chunkhash].js",
         publicPath: process.env.ASSET_PATH || "/",
     },
-    plugins: filterOutFalsy([
+    plugins: [
         new webpack.DefinePlugin({
             "process.env.BUILD_ENV": JSON.stringify("client"),
         }),
@@ -36,14 +35,12 @@ export const clientWebpackConfig = merge(baseCompilerConfig, {
                 minifyCSS: true,
             },
         }),
-        // @ts-ignore
-        // process.env.NODE_ENV === "production" && new HTMLWebpackInlineSourcePlugin(HTMLWebpackPlugin),
-        new CleanWebpackPlugin(),
         new MiniCSSExtractPlugin({
             filename: "static/css/[name].[chunkhash].css",
             ignoreOrder: true,
         }),
-    ]),
+        // new CleanWebpackPlugin(),
+    ],
     module: {
         rules: [
             {
