@@ -8,12 +8,12 @@
         "build": "yarn workspace @esr/script bundle-client"
     },
     "devDependencies": {
-        "@types/react": "17.0.0",
-        "@types/react-dom": "17.0.0"
+        "@types/react": "17.0.3",
+        "@types/react-dom": "17.0.3"
     },
     "dependencies": {
-        "@adobe/react-spectrum": "3.7.0",
-        "react": "17.0.1",
-        "react-dom": "17.0.1"
+        "@adobe/react-spectrum": "3.9.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
     }
 }

@@ -18,7 +18,7 @@ export function createBundler(compiler: Compiler | MultiCompiler) {
     return function (disableDevServer = false, port = 9090) {
         if (process.env.NODE_ENV === "development") {
             if (!disableDevServer) {
-                new WebpackDevServer(compiler).listen(port, error => {
+                new WebpackDevServer(compiler).listen(port, (error) => {
                     throw error;
                 });
             } else {

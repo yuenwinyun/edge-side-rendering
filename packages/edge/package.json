@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "license": "UNLICENSED",
     "devDependencies": {
-        "@cloudflare/workers-types": "2.1.0",
-        "@cloudflare/wrangler": "1.12.3"
+        "@cloudflare/workers-types": "2.2.1",
+        "@cloudflare/wrangler": "1.15.0"
     },
     "scripts": {
         "start": "NODE_ENV=development wrangler preview --watch",
